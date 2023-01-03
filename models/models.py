@@ -10,5 +10,6 @@ class Plant(db.Model):
 class Employee(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255), nullable=False)
+    surname = db.Column(db.String(255), nullable=False)
     type_of_work = db.Column(db.String(255), nullable=False)
-    object_id = db.Column(db.Integer, nullable=False)
+    plant_id = db.Column(db.Integer, nullable=False)
